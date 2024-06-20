@@ -63,3 +63,4 @@ impl Rectangle {
         Rectangle {width: size, height: size}
     }
 }
+
