@@ -1,11 +1,11 @@
-use rand::Rng;
 use rand::distributions::uniform::SampleUniform;
+use rand::Rng;
 use std::cmp::Ordering;
+use std::error::Error;
+use std::fmt;
+use std::fmt::Debug;
 use std::fmt::Display;
 use std::str::FromStr;
-use std::fmt;
-use std::error::Error;
-use std::fmt::Debug;
 
 fn main() {
     println!("Hello, world!");
@@ -19,56 +19,35 @@ struct Guess<T> {
     guess_max: T,
     guess_tgt: T,
     last_guess: Option<T>,
-
-
-}
-
-#[derive(Debug)]
-struct GuessError {
-    err: String,
-    guess_input: Option<String>,
-}
-
-impl GuessError {
-    fn new(message: String, input: Option<String>) -> GuessError {
-        GuessError { 
-            err: message.to_string(),
-            guess_input: input
-        }
-    }
-}
-
-
-impl fmt::Display for GuessError {
-    fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "{}", self.err)
-    }
-}
-
-impl Error for GuessError {
-    fn description(&self) -> &str {
-        &self.err
-    }
 }
 
 impl<T: Ord + SampleUniform + Copy + Display + FromStr> fmt::Display for Guess<T> {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "Min: {}\nMax: {}\nTarget: {}\nLast guess: {}", 
-                self.guess_min, 
-                self.guess_max, 
-                self.guess_tgt,
-                match self.last_guess{ Some(t) => t.to_string(), None => "none".to_string()})
+        write!(
+            fmt,
+            "Min: {}\nMax: {}\nTarget: {}\nLast guess: {}",
+            self.guess_min,
+            self.guess_max,
+            self.guess_tgt,
+            match self.last_guess {
+                Some(t) => t.to_string(),
+                None => "none".to_string(),
+            }
+        )
     }
 }
 
-
-impl<T: Ord + SampleUniform + Copy + Display + FromStr> Guess<T> {
+impl<T: Ord + SampleUniform + Copy + Display + FromStr> Guess<T>
+where
+    <T as FromStr>::Err: Error,
+    <T as FromStr>::Err: 'static,
+{
     fn new(min: T, max: T) -> Guess<T> {
         Guess {
             guess_min: min,
             guess_max: max,
             guess_tgt: Self::get_rnd_val(&min, &max),
-            last_guess: None
+            last_guess: None,
         }
     }
 
@@ -82,49 +61,48 @@ impl<T: Ord + SampleUniform + Copy + Display + FromStr> Guess<T> {
             Ordering::Less => {
                 println!("too low!");
                 self.last_guess = Some(*guess);
-                return (&self.last_guess, true)
-            },
+                return (&self.last_guess, true);
+            }
             Ordering::Equal => {
                 println!("you win!");
                 self.last_guess = Some(*guess);
                 return (&self.last_guess, false);
-            },
+            }
             Ordering::Greater => {
                 println!("too high!");
                 self.last_guess = Some(*guess);
-                return (&self.last_guess, true)
+                return (&self.last_guess, true);
             }
         }
     }
 
-    fn get_guess(&self) -> (bool, Result<T, GuessError>) {
-        let mut exit = false;
-        println!("Take a guess between {} and {}", self.guess_min, self.guess_max);
+    fn get_guess(&self) -> Result<T, Box<dyn Error>>
+    where
+        <T as FromStr>::Err: Error,
+        <T as FromStr>::Err: 'static,
+    {
+        println!(
+            "Take a guess between {} and {}",
+            self.guess_min, self.guess_max
+        );
         match self.last_guess {
             Some(n) => println!("Your last guess was {}", n),
-            None => println!("This is your first guess!")
+            None => println!("This is your first guess!"),
         };
         let mut guess_string = String::new();
-        let _ = std::io::stdin().read_line(&mut guess_string)
-                    .expect("Couldn't read user input");
-        match guess_string.as_str() {
-            "exit" => exit = true,
-            _ => {}
-        }
+        let _ = std::io::stdin()
+            .read_line(&mut guess_string)
+            .expect("Couldn't read user input");
 
-
-        (exit, match guess_string.trim().parse::<T>() {
-            Ok(g) => Ok(g),
-            Err(_) => Err(GuessError::new(String::from("Error parsing string"), Some(guess_string)))
-        })
+        let parsed = guess_string.trim().parse::<T>()?;
+        Ok(parsed)
     }
 
     fn play(&mut self) {
         let mut cont = true;
         while cont {
             let guess = self.get_guess();
-            if guess.0 { break; }
-            let guess = match guess.1 {
+            let guess = match guess {
                 Ok(g) => g,
                 Err(e) => {
                     println!("{:#?}", e);
@@ -139,11 +117,6 @@ impl<T: Ord + SampleUniform + Copy + Display + FromStr> Guess<T> {
             }
 
             cont = res.1;
-
-            
-
-
         }
-        
     }
 }
