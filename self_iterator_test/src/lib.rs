@@ -111,8 +111,7 @@ mod tests {
             files: true,
             sub_dirs: true,
             recursion: true,
-            dfs: Vec::new(),
-            visited_paths: Vec::new(),
+
         };
 
         let res = Tree::build(test_args.iter().map(|args| args.to_string()));
@@ -121,7 +120,5 @@ mod tests {
         assert_eq!(res.files, dummy_tree.files);
         assert_eq!(res.sub_dirs, dummy_tree.sub_dirs);
         assert_eq!(res.recursion, dummy_tree.recursion);
-        assert_eq!(res.dfs.len(), dummy_tree.dfs.len());
-        assert_eq!(res.visited_paths.len(), dummy_tree.visited_paths.len());
     }
 }

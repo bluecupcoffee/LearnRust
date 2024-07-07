@@ -1,0 +1,8 @@
+[workspace]
+
+resolver = "2"
+
+members = [ "custom_drop", "interior_mutability",
+    "main_bin", "memory_leak", "multiref_and_interior_mutability", "my_box",
+    "pointers", "reference_count",
+]

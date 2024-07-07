@@ -1,0 +1,582 @@
+leaves length: 50
+Parents:
+[
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -18,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        36,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        14,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        0,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        22,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        1,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        22,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -5,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -38,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        34,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        46,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -20,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        20,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -27,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -44,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -13,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        2,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -12,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        25,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        29,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -21,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -32,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -38,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -8,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -9,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        35,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        33,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        7,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        21,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -50,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        27,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -49,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -37,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        21,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        1,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -44,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -8,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        0,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -44,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -46,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        33,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        9,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -28,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        36,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        28,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -18,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -3,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -5,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+    Some(
+        BinaryTreeNode {
+            left: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        23,
+                    ),
+                },
+            ),
+            right: Some(
+                BinaryTreeNode {
+                    left: None,
+                    right: None,
+                    leaf_value: Some(
+                        -46,
+                    ),
+                },
+            ),
+            leaf_value: None,
+        },
+    ),
+]
+Parents length: 25
+leaves after populating parents:
+0
